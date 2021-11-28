@@ -1,5 +1,5 @@
 # caesar-decipher
-deciphers caesar ciphers 
+Deciphers strings that are encoded with caesar ciphers.
 
 To use:
 
@@ -23,15 +23,17 @@ detectMeaning('ifmmp').then((data) => {
 ```
 
 
-
-
 Then run `node app.js` to view the answer in your console.
 
 _Limitations:_
 
 Only works for shifts 1-26, or -1 to -26. 
 
+If you want to use it for a language other than English, you'll need to change line 28 to catch the language code of your choice:
+`      result[0].language === 'en' &&`
+
 API response comes back slowly. Would appreciate suggestions for performance improvement! 
 
 ### PS: If you're interested in the thought process behind this project, I wrote a [blog post](https://dev.to/cerchie/writing-a-caesar-shift-de-cipher-function-with-javascript-part-2-5df) on it!
 
+Here's the repo where I wrote the original utility code that ENcodes this: https://github.com/Cerchie/caesar-cipher
